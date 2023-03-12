@@ -11,7 +11,7 @@ const incrementCounter = () => {
 btnIncrement.addEventListener("click", incrementCounter);
 
 const saveCurrentCounter = () => {
-    saveCounter.textContent += ` ${counter} - `;
+    saveCounter.textContent += ` - ${counter}`;
     counter = 0;
     displayCounter.textContent = `${counter}`;
 }
