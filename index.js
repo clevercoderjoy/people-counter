@@ -13,17 +13,18 @@ const incrementCounter = () => {
 btnIncrement.addEventListener("click", incrementCounter);
 
 const saveCurrentCounter = () => {
-if (counter!=0) {
-    saveCounter.textContent += ` - ${counter}`;
-}else{
-    alert("counter is zero(0) Click the INCREMENT Button then save")
-}
+
+    if (counter !== 0) {
+        saveCounter.textContent += ` - ${counter }`;
+    } else {
+        alert("counter is zero(0) Click the INCREMENT Button then save")
+    }
 
 }
-const ResetCounterAsZero=()=>{
-
+const ResetCounterAsZero = () => {
     counter = 0;
     displayCounter.textContent = `${counter}`;
 }
-resetCounter.addEventListener("click",ResetCounterAsZero )
+
+resetCounter.addEventListener("click", ResetCounterAsZero)
 btnSave.addEventListener("click", saveCurrentCounter);
